@@ -7,7 +7,6 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import News from './pages/News';
-import Layout from './pages/Layout';
 
 
 
@@ -17,25 +16,30 @@ constructor(props) {
   super(props)
 
   this.state = {
-     first:true,
+     learning_routes:true,
   }
 }
 
   render() {
     return (
       <BrowserRouter>
-      <div className="App">
-        <Nav />
-    
-        <Routes>
-        {/* <Route path="/" element={<Layout />}> */}
-        <Route  index  path="/" element={ <Home />}/>
-        <Route  path="/News" element={ <News />}/>
-        <Route  path="/Contact" element={ <Contact />}/>
-        <Route  path="/About" element={ <About />}/>
-        {/* </Route> */}
 
-        </Routes>
+      <div className="App">
+       
+        <div className='routes'>
+          <Nav />
+          <Routes>
+          <Route  index  path="/" element={ <Home />}/>
+          <Route  path="/News" element={ <News />}/>
+          <Route  path="/Contact" element={ <Contact />}/>
+          <Route  path="/About" element={ <About />}/>
+          </Routes>
+         <div className='orig-link' > 
+         <a href='https://www.w3schools.com/howto/howto_js_full_page_tabs.asp' target="_blank" rel="noreferrer">
+          cloned from W3schools.com 
+         </a>
+         </div>
+        </div>
       
     </div>
     </BrowserRouter>

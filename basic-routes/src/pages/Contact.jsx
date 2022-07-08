@@ -1,10 +1,12 @@
-import React from 'react'
+import React from "react";
 
 export default function Contact() {
   return (
-   <div style={{ backgroundColor: "#2196f3" }} className="tabcontent">
-   <h3>About</h3>
-   <p>Who we are and what we do.</p>
- </div>
-  )
+    <div style={{ backgroundColor: "#2196f3" }} className="tabcontent">
+      <div className="inner-content">
+      <h3>Contact</h3>
+      <p>Get in touch, or swing by for a cup of coffee.</p>
+      </div>
+    </div>
+  );
 }
