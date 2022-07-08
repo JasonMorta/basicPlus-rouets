@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 export default function Nav() {
    //set the default state color to red which is equal to home page color.
   const [state, setState] = React.useState("#f44336");
+  const [color, setColor] = React.useState("white")
 
   return (
     <header className="App-header">
@@ -12,7 +13,7 @@ export default function Nav() {
         to="/"
         className="tablink"
         onClick={() => setState("#f44336")}
-        style={{ backgroundColor: state === "#f44336" ? state : "" }}>
+        style={{ backgroundColor: state === "#f44336" ? state : "", color: state === "#f44336" ? color: "#ffc107"}}>
         Home
       </Link>
 
@@ -20,7 +21,7 @@ export default function Nav() {
         to="/News"
         className="tablink"
         onClick={() => setState("#4caf50")}
-        style={{ backgroundColor: state === "#4caf50" ? state : "" }}>
+        style={{ backgroundColor: state === "#4caf50" ? state : "", color: state === "#4caf50" ? color: "#ffc107" }}>
         News
       </Link>
 
@@ -28,7 +29,7 @@ export default function Nav() {
         to="/Contact"
         className="tablink"
         onClick={() => setState("#2196f3")}
-        style={{ backgroundColor: state === "#2196f3" ? state : "" }}>
+        style={{ backgroundColor: state === "#2196f3" ? state : "", color: state === "#2196f3" ? color: "#ffc107" }}>
         Contact
       </Link>
 
@@ -36,7 +37,7 @@ export default function Nav() {
         to="/About"
         className="tablink"
         onClick={() => setState("#ff5722")}
-        style={{ backgroundColor: state === "#ff5722" ? state : "" }}>
+        style={{ backgroundColor: state === "#ff5722" ? state : "", color: state === "#ff5722" ? color: "#ffc107" }}>
         About
       </Link>
     </header>
