@@ -34,13 +34,13 @@ constructor(props) {
           <Route  path="/Contact" element={ <Contact />}/>
           <Route  path="/About" element={ <About />}/>
           </Routes>
-         <div className='orig-link' > 
+    
+        </div>
+        <div className='orig-link' > 
          <a href='https://www.w3schools.com/howto/howto_js_full_page_tabs.asp' target="_blank" rel="noreferrer">
           cloned from W3schools.com 
          </a>
          </div>
-        </div>
-      
     </div>
     </BrowserRouter>
     )

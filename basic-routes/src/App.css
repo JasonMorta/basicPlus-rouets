@@ -41,7 +41,7 @@ font-family: 'Varela Round', sans-serif;
 
 .orig-link a {
   text-decoration: none;
-  color: firebrick;
+  color: #ff9800;
 }
 .orig-link {
   margin: 1.25rem;
@@ -109,4 +109,5 @@ font-family: 'Varela Round', sans-serif;
   align-items: center;
   width: 60vw;
   margin-top: 3.125rem;
+  box-shadow: 0.125rem 0.125rem 0.1875rem 0rem #ff980066;
 }
