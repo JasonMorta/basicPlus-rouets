@@ -1,10 +1,26 @@
-import React from "react";
 import { Link } from "react-router-dom";
+import React, { useContext, useState } from "react";
+import { StateContext,  } from "../App";
+
+
 
 export default function Nav() {
    //set the default state color to red which is equal to home page color.
-  const [state, setState] = React.useState("#f44336");
-  const [color, setColor] = React.useState("white")
+
+  const [color, setColor] = useState("white")
+  const value = useContext(StateContext)
+
+  let [state, setState] = value
+
+  
+  
+
+  function toDo(){
+    setState("#4caf50")
+  }
+
+
+
 
   return (
     <header className="App-header">
@@ -18,11 +34,11 @@ export default function Nav() {
       </Link>
 
       <Link
-        to="/News"
+        to="/List"
         className="tablink"
-        onClick={() => setState("#4caf50")}
+        onClick={toDo}
         style={{ backgroundColor: state === "#4caf50" ? state : "", color: state === "#4caf50" ? color: "#ffc107" }}>
-        News
+        To-Do's
       </Link>
 
       <Link
