@@ -14,7 +14,7 @@ export default function Nav() {
   const [color, setColor] = React.useState("white")
 
 
-  console.log(state.location)
+ // Set the tab color to even when a nested link pathname is entered
   return (
     <header className="App-header">
       {/* Home will be the default/home page */}
