@@ -16,6 +16,8 @@ export default function App() {
 
   const [state, setState] = useState("#f44336");
 
+
+
   return (
     <BrowserRouter>
 
@@ -25,7 +27,7 @@ export default function App() {
         <Nav />
         <Routes>
         <Route  index  path="/" element={ <Home />}/>
-        <Route  path="/List" element={ <List />}/>
+        <Route   path="/List" element={ <List />}/>
         <Route  path="/Contact" element={ <Contact />}/>
         <Route  path="/About" element={ <About />}/>
         </Routes>

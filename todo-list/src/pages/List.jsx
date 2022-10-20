@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 export default function List() {
+
+  alert("check")
+
   return (
     <div style={{ backgroundColor: "#4caf50" }} className="tabcontent">
       <div className="inner-content">
