@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import './news.css';
 import pic from "../static/images/up.png"
 import { useRef } from "react";
@@ -11,20 +11,12 @@ export default function News() {
   const location = useLocation()
   console.log('location.pathname NEWComponent', location.pathname)
 
-useEffect(() => {
- 
   if (location.pathname === "/News") {
-     
     window.scrollTo({
       top: document.getElementById("my-image")?.offsetTop,
       behavior: "smooth",
     });
   }
-  
-}, [])
-
-    
-
 
   const goToTop = () => {
     window.scrollTo({

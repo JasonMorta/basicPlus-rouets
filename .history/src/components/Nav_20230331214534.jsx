@@ -21,7 +21,7 @@ export default function Nav() {
    function handleNavToNews(params) {
 
     setState(prev => ({...prev, active:"#4caf50", location: "/News" }))
-    location.pathname = "/News"
+
     console.log('currentPath = Path"', location.pathname)
 
 

@@ -20,10 +20,9 @@ useEffect(() => {
       behavior: "smooth",
     });
   }
-  
 }, [])
 
-    
+    }
 
 
   const goToTop = () => {
