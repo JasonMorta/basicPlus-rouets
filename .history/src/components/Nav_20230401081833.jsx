@@ -75,11 +75,11 @@ export default function Nav() {
       <Link
         to="/products"
         className="tablink"
-        onClick={() => setState(prev => ({...prev, active:"#FFE082", location: "/products" }))}
+        onClick={() => setState(prev => ({...prev, active:"blue", location: "/products" }))}
         style={{ 
-          backgroundColor: state.location === "/products" ? "#FFE082": "",
-          color: state.about === "#FFE082" ? color: "black" }}>
-        Products
+          backgroundColor: state.location === "/About" ? "blue": "",
+          color: state.about === "blue" ? color: "#ffc107" }}>
+        About
       </Link>
     </header>
   );

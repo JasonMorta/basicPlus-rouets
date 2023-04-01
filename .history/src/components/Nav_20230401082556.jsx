@@ -78,7 +78,7 @@ export default function Nav() {
         onClick={() => setState(prev => ({...prev, active:"#FFE082", location: "/products" }))}
         style={{ 
           backgroundColor: state.location === "/products" ? "#FFE082": "",
-          color: state.about === "#FFE082" ? color: "black" }}>
+          color: state.about === "#FFE082" ? color: "#ffc107" }}>
         Products
       </Link>
     </header>

@@ -8,7 +8,7 @@ import News from './pages/News';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import List from './pages/List';
-import Products from './pages/Products';
+import Porducts from './pages/Porducts';
 
 //create context hook
 //This hook allow any nested children to share and alter data with the use of props.
@@ -28,7 +28,7 @@ export default function App() {
             <Route path="/List" element={<List />} />
             <Route path="/Contact" element={<Contact />} />
             <Route path="/About" element={<About />} />
-            <Route path="/products" element={<Products />} />
+            <Route path="/About" element={<Porducts />} />
             <Route path="/news" element={<News />} />
           </Routes>
         </div>
